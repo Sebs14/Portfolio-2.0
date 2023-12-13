@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import gsap from "gsap";
-import TextPlugin from "gsap/TextPlugin";
-import { useEffect, useRef } from "react";
-import SplitType from "split-type";
+'use client';
+import React from 'react';
+import gsap from 'gsap';
+import TextPlugin from 'gsap/TextPlugin';
+import { useEffect, useRef } from 'react';
+import SplitType from 'split-type';
 
 const Hero = () => {
-  let words = ["Frontend Developer", "Gamer", "Computer Science Engineer"];
+  let words = ['Frontend Developer', 'Gamer', 'Computer Science Engineer'];
   const ref = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -47,7 +47,7 @@ const Hero = () => {
           opacity: 1,
           delay: 0,
           duration: 0.8,
-          ease: "power2.inOut",
+          ease: 'power2.inOut',
           repeat: -1,
         }
       );
@@ -55,22 +55,25 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center w-fit">
+    <div
+      id='home'
+      className='flex min-h-screen flex-col items-center justify-center'
+    >
+      <div className='relative flex flex-col items-center justify-center w-fit'>
         <h1
           ref={ref}
-          className="poligon text-3xl sm:text-4xl md:text-7xl font-noto-sans font-black text-white "
+          className='poligon text-3xl sm:text-4xl md:text-7xl font-noto-sans font-black text-[#9EC8B9] '
         >
           SEBASTIAN.FLORES
         </h1>
-        <div className="flex w-full items-center justify-center">
+        <div className='flex w-full items-center justify-center'>
           <span
             ref={ref2}
-            className="text-1xl sm:text-3xl md:text-4xl font-noto-sans font-semibold text-white"
+            className='text-1xl sm:text-3xl md:text-4xl font-noto-sans font-semibold text-[#9EC8B9]'
           ></span>
           <div
             ref={ref3}
-            className="mt-1 sm:mt-0 h-4 w-[2px] sm:h-10 sm:w-1 bg-white"
+            className='mt-1 sm:mt-0 h-4 w-[2px] sm:h-10 sm:w-1 bg-[#9EC8B9]'
           />
         </div>
       </div>
